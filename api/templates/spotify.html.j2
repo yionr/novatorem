@@ -6,14 +6,6 @@
                     /*margin-top: 40px;*/
                     display: flex;
                 }
-
-                .currentStatus {
-                    float: left;
-                    font-size: 24px;
-                    position: static;
-                    margin-top: -5px;
-                    margin-left: 10px;
-                }
                 
                 .container {
                     border-radius: 5px;
@@ -106,8 +98,6 @@
                 {{barCSS|safe}}
             </style>
 
-            <!-- <div class="currentStatus">{{status}}</div> -->
-
             <div class="main">
                 <a class="art" href="{}" target="_blank">
                     <center>
@@ -117,7 +107,7 @@
 
                 <div class="content">
                     <a href="{{songURI}}" target="_blank">
-                        <div class="song">{{songName}}</div>
+                        <div class="song">{{status}} {{songName}}</div>
                     </a>
                     <a href="{{artistURI}}" target="_blank">
                         <div class="artist">{{artistName}}</div>
